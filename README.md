@@ -322,45 +322,6 @@ Loop Count：5
 
 ---
 
-## 项目产物
-
-建议 GitHub 仓库按以下结构整理：
-
-```text
-BookStack-Test/
-├── README.md
-├── .gitignore
-│
-├── 01-测试分析与设计/
-│   ├── BookStack测试需求分析.xlsx
-│   ├── BookStack功能测试.xmind
-│   └── BookStack功能测试用例.xlsx
-│
-├── 02-测试发现/
-│   └── BookStack测试发现与优化建议.xlsx
-│
-├── 03-Postman接口测试/
-│   ├── BookStack_API_Testing.postman_collection.json
-│   ├── BookStack_Local.example.postman_environment.json
-│   └── BookStack_API_Test_Report.html
-│
-├── 04-SQL数据验证/
-│   └── BookStack_SQL记录.xlsx
-│
-├── 05-JMeter性能测试/
-│   ├── BookStack_API_Performance_Test.jmx
-│   ├── results.jtl
-│   └── report/
-│       └── index.html
-│
-└── 06-测试报告/
-    └── BookStack软件测试报告.docx
-```
-
-其中 JMeter HTML Dashboard 需要保留 `report/` 下的完整静态资源目录，不能只上传 `index.html`。
-
----
-
 ## 项目实践能力
 
 通过本项目实践并形成可展示成果的能力包括：
@@ -379,29 +340,6 @@ BookStack-Test/
 - 分析响应时间、吞吐量、错误率以及 API 限流现象
 - 输出完整的软件测试报告并整理 GitHub 测试项目产物
 
----
-
-## GitHub 安全说明
-
-上传仓库前需确保：
-
-- 不提交真实 `token_id` / `token_secret`
-- 不提交数据库密码或包含真实密码的配置文件
-- Postman Environment 仅提供脱敏后的 `.example` 示例文件
-- 不提交 `node_modules/`
-- 不提交包含真实凭据的 `.env` 文件
-- 本地调试产生的临时文件、系统文件和日志应加入 `.gitignore`
-
-建议 `.gitignore` 至少包含：
-
-```gitignore
-.DS_Store
-.env
-node_modules/
-*.log
-```
-
----
 
 ## 说明
 
